@@ -34,7 +34,7 @@ int _printf(const char *form, ...)
 			precision = get_precision(form, &kim, list);
 			size = get_size(form, &kim);
 			++kim;
-			printed = handler_print(form, &kim, list, buffer,
+			printed = handle_print(form, &kim, list, buffer,
 				flags, width, precision, size);
 			if (printed == -1)
 				return (-1);
